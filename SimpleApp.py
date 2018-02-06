@@ -1,7 +1,7 @@
 """SimpleApp.py"""
 from pyspark.sql import SparkSession
 
-logFile = "./Documents/HMP_Dataset/README.txt"  # Should be some file on your system
+logFile = "HMP_Dataset/README.txt"  # Should be some file on your system
 spark = SparkSession.builder.appName("SimpleApp.py").master("local").getOrCreate()
 logData = spark.read.text(logFile).cache()
 
