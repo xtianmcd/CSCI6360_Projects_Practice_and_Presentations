@@ -36,6 +36,7 @@ def data_to_frame(fp):
     # create the dataframe
     expr = [col(c).cast("Double").alias(c) for c in p1_data.columns]
     df = p1_data.select(*expr)
+    print('The DataFrame is:')
     df.show()
     return df
 
@@ -68,9 +69,10 @@ def mult_lin_reg(data, input_cols, response_col):
                             labelCol = response_col)
     lrModel = lr.fit(df_lr)
 
-    print("Intercept: ", lrModel.intercept, "\n")
+    print("\n", "Intercept: ", lrModel.intercept, "\n")
     print("Coefficients: ")
-    print('\n'.join(list(str((feature+1, coeff)) for feature, coeff in enumerate(lrModel.coefficients))))
+    # print('\n'.join(list(str((feature+1, coeff)) for feature, coeff in enumerate(lrModel.coefficients))))
+    print('\n'.join(list(str((feature, coeff)) for feature, coeff in zip(df_lr.schema.names, lrModel.coefficients))))
     return lrModel
 
 def model_stats(data, lr_model, *args):
@@ -88,11 +90,18 @@ def model_stats(data, lr_model, *args):
     """
     lrSummary = lr_model.summary
     last_row  = len(lrSummary.coefficientStandardErrors)
+    # get the names of all feature columns and the intercept column
+    col_names = list(data.schema.names)
+    col_names.remove('Y')
+    col_names.append('Intercept')
+
     if "R2" in args:
         print ("R2: ", lrSummary.r2)
     if "CSE" in args:
         print("\nCoefficient Std Err: ")
-        print('\n'.join(list(str((feature+1, err)) for feature, err in enumerate(lrSummary.coefficientStandardErrors))))
+        # print('\n'.join(list(str((feature+1, err)) for feature, err in enumerate(lrSummary.coefficientStandardErrors))))
+        print('\n'.join(list(str((feature, err)) for feature, err in \
+                zip(col_names, lrSummary.coefficientStandardErrors))))
         print("**Row {} is the intercept**".format(last_row))
     if "DoF" in args:
         print("\nDoF: ", lrSummary.degreesOfFreedom)
@@ -102,11 +111,13 @@ def model_stats(data, lr_model, *args):
         print("\nRSS/SSE: ", lrSummary.meanSquaredError * data.count())
     if "t-Values" in args:
         print("\nt-Values: ")
-        print('\n'.join(list(str((feature+1, tval)) for feature, tval in enumerate(lrSummary.tValues))))
+        print('\n'.join(list(str((feature, tval)) for feature, tval in \
+                zip(col_names, lrSummary.tValues))))
         print("**Row {} is the intercept**".format(last_row))
     if "p-Values" in args:
         print("\n\np-Values: ")
-        print('\n'.join(list(str((feature+1, pval)) for feature, pval in enumerate(lrSummary.pValues))))
+        print('\n'.join(list(str((feature, pval)) for feature, pval in \
+                zip(col_names, lrSummary.pValues))))
         print("**Row {} is the intercept**".format(last_row))
     print()
     return
@@ -128,6 +139,7 @@ def exp_transformation(data, orig_col, new_col, power):
     transformed_df: new dataframe with transformed column added as the last col
     """
     transformed_df = data.withColumn(new_col, pow(data[orig_col], power))
+    print('The transformed DataFrame is:')
     transformed_df.show()
     return transformed_df
 
@@ -177,6 +189,7 @@ def drop_cols(df, cols):
     try:
         for col in cols:
             df = df.drop(col)
+            print('The DataFrame after dropping columns is:')
             df.show()
         return df
     except:
