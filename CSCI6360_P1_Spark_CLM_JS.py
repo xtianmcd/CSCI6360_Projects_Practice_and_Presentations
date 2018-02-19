@@ -9,6 +9,7 @@ from pyspark.ml.feature import StringIndexer, VectorAssembler
 from pyspark.mllib import linalg
 from pyspark.sql.functions import UserDefinedFunction
 from pyspark.sql.types import ArrayType
+from argparse import ArgumentParser
 """
 __author__ = "Christian McDaniel and Jeremy Shi"
 
@@ -240,8 +241,13 @@ if __name__ == '__main__':
     # initiate the Spark session
     spark = SparkSession.builder.getOrCreate()
 
+    # add an argument parser for the dataset filepath
+    parser = ArgumentParser()
+    parser.add_argument(dest='filepath', help = 'specify the path of the dataset')
+    args = parser.parse_args()
+    filepath = args.filepath
+
     # set up variables
-    filepath = "./dataset-p1.csv"
     lr1_input_features = ["X" + str(x+1) for x in range(15)]
     lr2_input_features = lr1_input_features + ["X4^2"]
     lr_label           = 'Y'
