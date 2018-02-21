@@ -65,15 +65,18 @@ def mult_lin_reg(data, input_cols, response_col):
         inputCols=input_cols,
         outputCol="features")
     df_lr = assembler.transform(data)
+    print (df_lr.show())
     # run linear regression on the data; print stats
     lr = LinearRegression(featuresCol="features",\
                             labelCol = response_col)
     lrModel = lr.fit(df_lr)
-
+    # Get all col names except Y (for calculating coefficients and other quality measures)
+    col_names = list(data.schema.names)
+    col_names.remove('Y')
+    col_names.append('Intercept')
     print("\n", "Intercept: ", lrModel.intercept, "\n")
     print("Coefficients: ")
-    # print('\n'.join(list(str((feature+1, coeff)) for feature, coeff in enumerate(lrModel.coefficients))))
-    print('\n'.join(list(str((feature, coeff)) for feature, coeff in zip(df_lr.schema.names, lrModel.coefficients))))
+    print('\n'.join(list(str((feature, coeff)) for feature, coeff in zip(col_names, lrModel.coefficients))))
     return lrModel
 
 def model_stats(data, lr_model, *args):
@@ -100,7 +103,6 @@ def model_stats(data, lr_model, *args):
         print ("R2: ", lrSummary.r2)
     if "CSE" in args:
         print("\nCoefficient Std Err: ")
-        # print('\n'.join(list(str((feature+1, err)) for feature, err in enumerate(lrSummary.coefficientStandardErrors))))
         print('\n'.join(list(str((feature, err)) for feature, err in \
                 zip(col_names, lrSummary.coefficientStandardErrors))))
         print("**Row {} is the intercept**".format(last_row))
