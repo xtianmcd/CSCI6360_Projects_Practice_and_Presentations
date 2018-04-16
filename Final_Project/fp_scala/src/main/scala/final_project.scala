@@ -107,21 +107,42 @@ object ClassifierTests extends App
     // val fnCancer    = dataCancer.colName.slice  (0, xyCancer.dim2 - 1).toArray 							// feature names
     // val cnCancer    = Array                     ("p", "e")                        						// class names
 
-    // val whiteWineFP   = "../winequality-white.csv"
-    // val dataWhiteWine = Relation(whiteWineFP, "WhiteWine", -1, null, ";")   
+    val whiteWineFP   = "../winequality-white.csv"                                           // raw data 
+    //val dataWhiteWine = Relation(whiteWineFP, "WhiteWine", -1, null, ";")   
 
-    val whiteWineDiscFP = "../winequality-0-discretized.csv"
+    val whiteWineDiscFP = "../winequality-0-discretized.csv"                                    // discretized data
     val dataWhiteWine = Relation(whiteWineDiscFP, "WhiteWine", -1, null, ",")                   // read in the CSV
+
     val xyWhiteWine   = dataWhiteWine.toMatriI2(null)   
     val xWhiteWine    = xyWhiteWine(0 until xyWhiteWine.dim1, 0 until xyWhiteWine.dim2 - 1)    // separate data
-    val yWhiteWine    = xyWhiteWine.col(xyWhiteWine.dim2 - 1).-=(3) 
-    val k = 7
+    val yWhiteWine    = xyWhiteWine.col(xyWhiteWine.dim2 - 1)//.-=(3) 
+    val kwt = 7
 
     // val data   = MatrixD (file)
     // val target = data.col (data.dim2-1).-=(3)                        // regularize the target value
     // val sample = data.selectCols (Range(0, data.dim2 - 1).toArray)
     var fnWhiteWine     = new Array[String] (xyWhiteWine.dim2-1)
-    val cnWhiteWine     = new Array[String] (k)
+    val cnWhiteWine     = new Array[String] (kwt)
+
+//////////////////
+
+    val redWineFP   = "../winequality-red.csv"                                           // raw data 
+    val dataRedWine = Relation(redWineFP, "RedWine", -1, null, ";")   
+
+
+    val redWineDiscFP = "../winequality-1-discretized.csv"                                    // discretized data
+    //val dataRedWine = Relation(redWineDiscFP, "RedWine", -1, null, ",")                   // read in the CSV
+
+    val xyRedWine   = dataRedWine.toMatriI2(null)   
+    val xRedWine    = xyRedWine(0 until xyRedWine.dim1, 0 until xyRedWine.dim2 - 1)    // separate data
+    val yRedWine    = xyRedWine.col(xyRedWine.dim2 - 1).-=(3) 
+    val kred = 6
+
+    // val data   = MatrixD (file)
+    // val target = data.col (data.dim2-1).-=(3)                        // regularize the target value
+    // val sample = data.selectCols (Range(0, data.dim2 - 1).toArray)
+    var fnRedWine     = new Array[String] (xyWhiteWine.dim2-1)
+    val cnRedWine     = new Array[String] (kred)
 
     // val k = 2
 
@@ -228,7 +249,7 @@ object ClassifierTests extends App
     *	@param show		  if true, prints some informative messages; 
 	*					  false by default
     */
-    def crossValidateAlgos (dataset :String, datasetxy :MatriI, datasetx :MatriI, datasety :VectoI, datasetfn :Array[String], datasetcn :Array[String], nx :Int, caravan: Boolean = false, show: Boolean = false)
+    def crossValidateAlgos (dataset :String, datasetxy :MatriI, datasetx :MatriI, datasety :VectoI, datasetfn :Array[String], datasetcn :Array[String], k :Int, nx :Int, caravan: Boolean = false, show: Boolean = false)
         {
 
             val vc          = (for(j <- datasetx.range2) yield datasetx.col(j).max() + 1).toArray		// calculate the value counts for each feature 
@@ -432,7 +453,9 @@ object ClassifierTests extends App
   // crossValidateAlgos ("CARAVAN ", xyCaravan, xCaravan, yCaravan, fnCaravan, cnCaravan, 20, true)
   // crossValidateAlgos (" CANCER ", xyCancer,  xCancer,  yCancer,  fnCancer,  cnCancer,  20)
 
-  crossValidateAlgos ("W.D.WINE", xyWhiteWine,  xWhiteWine,  yWhiteWine,  fnWhiteWine,  cnWhiteWine,  10)
+  //crossValidateAlgos ("Wt. WINE", xyWhiteWine,  xWhiteWine,  yWhiteWine,  fnWhiteWine,  cnWhiteWine, kwt, 10)
+  crossValidateAlgos ("Red WINE", xyRedWine,  xRedWine,  yRedWine,  fnRedWine,  cnRedWine, kred, 10)
+
 
 
 } // ClassifierTests

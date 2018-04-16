@@ -1,0 +1,36 @@
+rank1_model_num,73
+rank1_acc,0.9403989326521021
+rank1_params,"{'use_bias': True, 'units3': 45, 'units2': 10, 'units1': 85, 'optimizer': 'nadam', 'n_layers': 3, 'kernel_initializer': 'lecun_normal', 'bias_initializer': 'zeros', 'batch_size': 128, 'activationh': 'softmax'}"
+rank2_model_num,152
+rank2_acc,0.9403986374262729
+rank2_params,"{'use_bias': False, 'units3': 85, 'units2': 45, 'units1': 10, 'optimizer': <keras.optimizers.SGD object at 0x7fc46a7578d0>, 'n_layers': 10, 'kernel_initializer': 'glorot_uniform', 'bias_initializer': 'zeros', 'batch_size': 128, 'activationh': 'linear'}"
+rank3_model_num,143
+rank3_acc,0.9402272588323598
+rank3_params,"{'use_bias': True, 'units3': 85, 'units2': 45, 'units1': 85, 'optimizer': <keras.optimizers.SGD object at 0x7fc4b505c748>, 'n_layers': 1, 'kernel_initializer': 'lecun_normal', 'bias_initializer': 'lecun_normal', 'batch_size': 512, 'activationh': 'tanh'}"
+rank4_model_num,6
+rank4_acc,0.9402269636065304
+rank4_params,"{'use_bias': False, 'units3': 45, 'units2': 85, 'units1': 45, 'optimizer': <keras.optimizers.SGD object at 0x7fc46a7578d0>, 'n_layers': 3, 'kernel_initializer': 'zeros', 'bias_initializer': 'glorot_uniform', 'batch_size': 50, 'activationh': 'linear'}"
+rank5_model_num,7
+rank5_acc,0.9402269636065304
+rank5_params,"{'use_bias': True, 'units3': 10, 'units2': 10, 'units1': 10, 'optimizer': <keras.optimizers.SGD object at 0x7fc46a7578d0>, 'n_layers': 10, 'kernel_initializer': 'glorot_uniform', 'bias_initializer': 'zeros', 'batch_size': 50, 'activationh': 'sigmoid'}"
+rank5_1_model_num,164
+rank5_1_acc,0.9402269636065304
+rank5_1_params,"{'use_bias': True, 'units3': 85, 'units2': 10, 'units1': 45, 'optimizer': 'nadam', 'n_layers': 2, 'kernel_initializer': 'ones', 'bias_initializer': 'zeros', 'batch_size': 1280, 'activationh': 'tanh'}"
+rank1_model_num,106
+rank1_fscore,0.16837685144639353
+rank1_params,"{'use_bias': False, 'units3': 85, 'units2': 10, 'units1': 10, 'optimizer': <keras.optimizers.SGD object at 0x7fc4b505c748>, 'n_layers': 2, 'kernel_initializer': <keras.initializers.Constant object at 0x7fc46bd5b3c8>, 'bias_initializer': 'glorot_uniform', 'batch_size': 512, 'activationh': 'sigmoid'}"
+rank2_model_num,142
+rank2_fscore,0.16283178210707036
+rank2_params,"{'use_bias': True, 'units3': 10, 'units2': 45, 'units1': 45, 'optimizer': <keras.optimizers.SGD object at 0x7fc4b505c748>, 'n_layers': 1, 'kernel_initializer': 'ones', 'bias_initializer': 'glorot_uniform', 'batch_size': 5822, 'activationh': 'linear'}"
+rank3_model_num,165
+rank3_fscore,0.1518095225879815
+rank3_params,"{'use_bias': True, 'units3': 45, 'units2': 85, 'units1': 85, 'optimizer': <keras.optimizers.SGD object at 0x7fc46a757828>, 'n_layers': 10, 'kernel_initializer': 'ones', 'bias_initializer': 'lecun_normal', 'batch_size': 128, 'activationh': 'sigmoid'}"
+rank4_model_num,131
+rank4_fscore,0.057292664264046333
+rank4_params,"{'use_bias': False, 'units3': 85, 'units2': 85, 'units1': 10, 'optimizer': <keras.optimizers.SGD object at 0x7fc469ea8c88>, 'n_layers': 2, 'kernel_initializer': 'lecun_normal', 'bias_initializer': <keras.initializers.Constant object at 0x7fc46bd5b3c8>, 'batch_size': 128, 'activationh': 'relu'}"
+rank5_model_num,136
+rank5_fscore,0.05413533834586466
+rank5_params,"{'use_bias': True, 'units3': 10, 'units2': 85, 'units1': 10, 'optimizer': 'adam', 'n_layers': 10, 'kernel_initializer': 'zeros', 'bias_initializer': <keras.initializers.Constant object at 0x7fc46bd5b3c8>, 'batch_size': 128, 'activationh': 'sigmoid'}"
+rank5_1_model_num,45
+rank5_1_fscore,0.0
+rank5_1_params,"{'use_bias': True, 'units3': 85, 'units2': 10, 'units1': 10, 'optimizer': <keras.optimizers.SGD object at 0x7fc46a7578d0>, 'n_layers': 1, 'kernel_initializer': 'zeros', 'bias_initializer': <keras.initializers.Constant object at 0x7fc46bd5b3c8>, 'batch_size': 5822, 'activationh': 'softmax'}"

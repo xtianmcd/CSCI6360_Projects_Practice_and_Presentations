@@ -1,0 +1,63 @@
+Params fold 166: {'use_bias': False, 'units3': 10, 'units2': 45, 'units1': 10, 'optimizer': <keras.optimizers.SGD object at 0x7fc46a757828>, 'n_layers': 2, 'kernel_initializer': 'ones', 'bias_initializer': <keras.initializers.Constant object at 0x7fc46bd5b3c8>, 'batch_size': 512, 'activationh': 'tanh'}
+Performance:
+	Accuracy: 62.69379365938871% +/-0.013766597852848762
+	Recall: 0.5518426501035197 +/-0.04835857476605957
+	Precision: 0.08711841979674155 +/-0.008901428581568884
+	F1Score: 0.15047088408788234 +/-0.015049320778729513Results: tp:38.4, tn:691.6, fp:403.2, fn:31.2Time Elapsed: 156.34 average per run for total of 156.34
+
+Params fold 167: {'use_bias': True, 'units3': 10, 'units2': 45, 'units1': 10, 'optimizer': <keras.optimizers.SGD object at 0x7fc469ea8c88>, 'n_layers': 1, 'kernel_initializer': 'lecun_normal', 'bias_initializer': 'zeros', 'batch_size': 512, 'activationh': 'relu'}
+Performance:
+	Accuracy: 93.98836159670454% +/-0.0007339319321110479
+	Recall: 0.002857142857142857 +/-0.005714285714285714
+	Precision: 0.1 +/-0.20000000000000004
+	F1Score: 0.005555555555555556 +/-0.011111111111111112Results: tp:0.2, tn:1094.2, fp:0.6, fn:69.4Time Elapsed: 159.91 average per run for total of 159.91
+
+Params fold 168: {'use_bias': True, 'units3': 45, 'units2': 85, 'units1': 10, 'optimizer': <keras.optimizers.SGD object at 0x7fc469ea8c88>, 'n_layers': 3, 'kernel_initializer': 'lecun_normal', 'bias_initializer': 'zeros', 'batch_size': 5822, 'activationh': 'linear'}
+Performance:
+	Accuracy: 93.95399733553617% +/-0.0010121694589707761
+	Recall: 0.002857142857142857 +/-0.005714285714285714
+	Precision: 0.2 +/-0.4000000000000001
+	F1Score: 0.005633802816901409 +/-0.011267605633802818Results: tp:0.2, tn:1093.8, fp:1.0, fn:69.4Time Elapsed: 157.82 average per run for total of 157.82
+
+Params fold 169: {'use_bias': False, 'units3': 85, 'units2': 85, 'units1': 45, 'optimizer': 'adam', 'n_layers': 5, 'kernel_initializer': 'lecun_normal', 'bias_initializer': <keras.initializers.Constant object at 0x7fc46bd5b3c8>, 'batch_size': 5822, 'activationh': 'sigmoid'}
+Performance:
+	Accuracy: 93.88525401386337% +/-0.0010055819542438631
+	Recall: 0.011594202898550725 +/-0.016901309840131308
+	Precision: 0.11666666666666665 +/-0.1452966314513558
+	F1Score: 0.020864067439409904 +/-0.02997072933130651Results: tp:0.8, tn:1092.4, fp:2.4, fn:68.8Time Elapsed: 172.37 average per run for total of 172.37
+
+Params fold 170: {'use_bias': False, 'units3': 45, 'units2': 45, 'units1': 10, 'optimizer': 'nadam', 'n_layers': 3, 'kernel_initializer': 'glorot_uniform', 'bias_initializer': 'glorot_uniform', 'batch_size': 128, 'activationh': 'softmax'}
+Performance:
+	Accuracy: 94.02269636065303% +/-0.00038343974857849846
+	Recall: 0.0 +/-0.0
+	Precision: 0.0 +/-0.0
+	F1Score: 0.0 +/-0.0Results: tp:0.0, tn:1094.8, fp:0.0, fn:69.6Time Elapsed: 176.89 average per run for total of 176.89
+
+Params fold 171: {'use_bias': True, 'units3': 10, 'units2': 10, 'units1': 85, 'optimizer': <keras.optimizers.SGD object at 0x7fc469ea8c88>, 'n_layers': 2, 'kernel_initializer': 'glorot_uniform', 'bias_initializer': 'ones', 'batch_size': 128, 'activationh': 'sigmoid'}
+Performance:
+	Accuracy: 94.02269636065303% +/-0.00038343974857849846
+	Recall: 0.0 +/-0.0
+	Precision: 0.0 +/-0.0
+	F1Score: 0.0 +/-0.0Results: tp:0.0, tn:1094.8, fp:0.0, fn:69.6Time Elapsed: 175.67 average per run for total of 175.67
+
+Params fold 172: {'use_bias': True, 'units3': 10, 'units2': 85, 'units1': 45, 'optimizer': 'adam', 'n_layers': 2, 'kernel_initializer': 'lecun_normal', 'bias_initializer': 'zeros', 'batch_size': 512, 'activationh': 'softmax'}
+Performance:
+	Accuracy: 93.79946137518498% +/-0.001222118403748139
+	Recall: 0.002857142857142857 +/-0.005714285714285714
+	Precision: 0.04 +/-0.08
+	F1Score: 0.005333333333333333 +/-0.010666666666666666Results: tp:0.2, tn:1092.0, fp:2.8, fn:69.4Time Elapsed: 173.13 average per run for total of 173.13
+
+Params fold 173: {'use_bias': False, 'units3': 10, 'units2': 10, 'units1': 85, 'optimizer': <keras.optimizers.SGD object at 0x7fc46a7578d0>, 'n_layers': 2, 'kernel_initializer': 'zeros', 'bias_initializer': 'glorot_uniform', 'batch_size': 512, 'activationh': 'linear'}
+Performance:
+	Accuracy: 94.02269636065303% +/-0.00038343974857849846
+	Recall: 0.0 +/-0.0
+	Precision: 0.0 +/-0.0
+	F1Score: 0.0 +/-0.0Results: tp:0.0, tn:1094.8, fp:0.0, fn:69.6Time Elapsed: 168.08 average per run for total of 168.08
+
+Params fold 174: {'use_bias': False, 'units3': 85, 'units2': 45, 'units1': 10, 'optimizer': <keras.optimizers.SGD object at 0x7fc46a757828>, 'n_layers': 5, 'kernel_initializer': 'zeros', 'bias_initializer': <keras.initializers.Constant object at 0x7fc46bd5b3c8>, 'batch_size': 512, 'activationh': 'sigmoid'}
+Performance:
+	Accuracy: 94.02269636065303% +/-0.00038343974857849846
+	Recall: 0.0 +/-0.0
+	Precision: 0.0 +/-0.0
+	F1Score: 0.0 +/-0.0Results: tp:0.0, tn:1094.8, fp:0.0, fn:69.6Time Elapsed: 170.70 average per run for total of 170.70
+

@@ -18,13 +18,14 @@ df_num = 0
 
 for df in dfs:
     unique = 0
-
+    classes = df['quality'].nunique()
+    print(classes)
     for col in df:
         # print(col)
         unique = df[col].nunique()
         # print("{} has {} unique vals".format(col, unique))
         # print("{} max: {}, min: {}".format(col, df[col].max(), df[col].min()))
-        df[col] = pd.cut(df[col], 10, labels=False, include_lowest=True)
+        df[col] = pd.cut(df[col], classes, labels=False, include_lowest=True)
         unique = df[col].nunique()
         # print("{} has {} unique vals".format(col, unique))
         # print("{} max: {}, min: {}".format(col, df[col].max(), df[col].min()))

@@ -1,0 +1,343 @@
+Params fold -10: {'use_bias': True, 'units3': 45, 'units2': 10, 'units1': 85, 'optimizer': 'nadam', 'n_layers': 3, 'kernel_initializer': 'lecun_normal', 'bias_initializer': 'zeros', 'batch_size': 128, 'activationh': 'softmax'}
+Performance:
+	Accuracy: 93.74782644104667% +/-0.001488333923092423
+	Recall: 0.01432712215320911 +/-0.015649435057842675
+	Precision: 0.1757142857142857 +/-0.1623551159448614
+	F1Score: 0.026395226395226394 +/-0.028457795857224785Results: tp:1.0, tn:1090.6, fp:4.2, fn:68.6Time Elapsed: 3.05 average per run for total of 3.05
+
+Params fold -10: {'use_bias': True, 'units3': 45, 'units2': 10, 'units1': 85, 'optimizer': 'nadam', 'n_layers': 3, 'kernel_initializer': 'lecun_normal', 'bias_initializer': 'zeros', 'batch_size': 128, 'activationh': 'softmax'}
+Performance:
+	Accuracy: 93.67909786798381% +/-0.0014171281348020603
+	Recall: 0.011469979296066253 +/-0.01070183111048576
+	Precision: 0.1419047619047619 +/-0.14662955622032559
+	F1Score: 0.02119298245614035 +/-0.01991870211012564Results: tp:0.8, tn:1090.0, fp:4.8, fn:68.8Time Elapsed: 3.04 average per run for total of 3.04
+
+Params fold -10: {'use_bias': True, 'units3': 45, 'units2': 10, 'units1': 85, 'optimizer': 'nadam', 'n_layers': 3, 'kernel_initializer': 'lecun_normal', 'bias_initializer': 'zeros', 'batch_size': 128, 'activationh': 'softmax'}
+Performance:
+	Accuracy: 93.81655496338344% +/-0.0010865923531256547
+	Recall: 0.01432712215320911 +/-0.015649435057842675
+	Precision: 0.17333333333333334 +/-0.18306040290327977
+	F1Score: 0.026458036984352774 +/-0.028828906815297182Results: tp:1.0, tn:1091.4, fp:3.4, fn:68.6Time Elapsed: 2.86 average per run for total of 2.86
+
+Params fold -10: {'use_bias': True, 'units3': 45, 'units2': 10, 'units1': 85, 'optimizer': 'nadam', 'n_layers': 3, 'kernel_initializer': 'lecun_normal', 'bias_initializer': 'zeros', 'batch_size': 128, 'activationh': 'softmax'}
+Performance:
+	Accuracy: 93.71347687776215% +/-0.0006639400459563196
+	Recall: 0.011428571428571429 +/-0.01665986255670086
+	Precision: 0.10833333333333332 +/-0.14813657362192648
+	F1Score: 0.020647773279352223 +/-0.02992666981793737Results: tp:0.8, tn:1090.4, fp:4.4, fn:68.8Time Elapsed: 3.06 average per run for total of 3.06
+
+Params fold -10: {'use_bias': True, 'units3': 45, 'units2': 10, 'units1': 85, 'optimizer': 'nadam', 'n_layers': 3, 'kernel_initializer': 'lecun_normal', 'bias_initializer': 'zeros', 'batch_size': 128, 'activationh': 'softmax'}
+Performance:
+	Accuracy: 93.69626524995806% +/-0.0014211269230923716
+	Recall: 0.011428571428571429 +/-0.01665986255670086
+	Precision: 0.12571428571428572 +/-0.17009001218442532
+	F1Score: 0.02091774891774892 +/-0.03031567330565351Results: tp:0.8, tn:1090.2, fp:4.6, fn:68.8Time Elapsed: 3.14 average per run for total of 3.14
+
+Params fold -10: {'use_bias': True, 'units3': 45, 'units2': 10, 'units1': 85, 'optimizer': 'nadam', 'n_layers': 3, 'kernel_initializer': 'lecun_normal', 'bias_initializer': 'zeros', 'batch_size': 128, 'activationh': 'softmax'}
+Performance:
+	Accuracy: 93.95401208414611% +/-0.0012633460307727344
+	Recall: 0.005755693581780538 +/-0.007049560230237819
+	Precision: 0.26666666666666666 +/-0.38873012632302006
+	F1Score: 0.011189358372456965 +/-0.013704667736420297Results: tp:0.4, tn:1093.6, fp:1.2, fn:69.2Time Elapsed: 3.71 average per run for total of 3.71
+
+Params fold -10: {'use_bias': True, 'units3': 45, 'units2': 10, 'units1': 85, 'optimizer': 'nadam', 'n_layers': 3, 'kernel_initializer': 'lecun_normal', 'bias_initializer': 'zeros', 'batch_size': 128, 'activationh': 'softmax'}
+Performance:
+	Accuracy: 93.86817517427485% +/-0.0014604063109730243
+	Recall: 0.011428571428571429 +/-0.01665986255670086
+	Precision: 0.10833333333333332 +/-0.14813657362192648
+	F1Score: 0.020647773279352223 +/-0.02992666981793737Results: tp:0.8, tn:1092.2, fp:2.6, fn:68.8Time Elapsed: 4.65 average per run for total of 4.65
+
+Params fold -10: {'use_bias': True, 'units3': 45, 'units2': 10, 'units1': 85, 'optimizer': 'nadam', 'n_layers': 3, 'kernel_initializer': 'lecun_normal', 'bias_initializer': 'zeros', 'batch_size': 128, 'activationh': 'softmax'}
+Performance:
+	Accuracy: 94.00552897867878% +/-0.0006101745334460296
+	Recall: 0.01722567287784679 +/-0.010668775430352244
+	Precision: 0.38 +/-0.19390719429665315
+	F1Score: 0.03274508311128029 +/-0.01996030848101343Results: tp:1.2, tn:1093.4, fp:1.4, fn:68.4Time Elapsed: 5.35 average per run for total of 5.35
+
+Params fold -10: {'use_bias': True, 'units3': 45, 'units2': 10, 'units1': 85, 'optimizer': 'nadam', 'n_layers': 3, 'kernel_initializer': 'lecun_normal', 'bias_initializer': 'zeros', 'batch_size': 128, 'activationh': 'softmax'}
+Performance:
+	Accuracy: 93.74797400323523% +/-0.00236045615741307
+	Recall: 0.022939958592132506 +/-0.019403198277815413
+	Precision: 0.20595238095238094 +/-0.12483549265636504
+	F1Score: 0.040181592020092374 +/-0.03217343086203691Results: tp:1.6, tn:1090.0, fp:4.8, fn:68.0Time Elapsed: 6.05 average per run for total of 6.05
+
+Params fold -10: {'use_bias': True, 'units3': 45, 'units2': 10, 'units1': 85, 'optimizer': 'nadam', 'n_layers': 3, 'kernel_initializer': 'lecun_normal', 'bias_initializer': 'zeros', 'batch_size': 128, 'activationh': 'softmax'}
+Performance:
+	Accuracy: 93.9711942147303% +/-0.001237017546948178
+	Recall: 0.002898550724637681 +/-0.005797101449275362
+	Precision: 0.1 +/-0.2
+	F1Score: 0.00563380281690141 +/-0.01126760563380282Results: tp:0.2, tn:1094.0, fp:0.8, fn:69.4Time Elapsed: 7.00 average per run for total of 7.00
+
+Params fold -10: {'use_bias': True, 'units3': 45, 'units2': 10, 'units1': 85, 'optimizer': 'nadam', 'n_layers': 3, 'kernel_initializer': 'lecun_normal', 'bias_initializer': 'zeros', 'batch_size': 128, 'activationh': 'softmax'}
+Performance:
+	Accuracy: 93.9883320741216% +/-0.0005281576327017914
+	Recall: 0.008612836438923395 +/-0.007032757855497798
+	Precision: 0.2333333333333333 +/-0.2
+	F1Score: 0.016590563165905632 +/-0.013546850676474468Results: tp:0.6, tn:1093.8, fp:1.0, fn:69.0Time Elapsed: 7.94 average per run for total of 7.94
+
+Params fold -10: {'use_bias': True, 'units3': 45, 'units2': 10, 'units1': 85, 'optimizer': 'nadam', 'n_layers': 3, 'kernel_initializer': 'lecun_normal', 'bias_initializer': 'zeros', 'batch_size': 128, 'activationh': 'softmax'}
+Performance:
+	Accuracy: 93.91964779761469% +/-0.0013584360175372125
+	Recall: 0.0 +/-0.0
+	Precision: 0.0 +/-0.0
+	F1Score: 0.0 +/-0.0Results: tp:0.0, tn:1093.6, fp:1.2, fn:69.6Time Elapsed: 8.84 average per run for total of 8.84
+
+Params fold -10: {'use_bias': True, 'units3': 45, 'units2': 10, 'units1': 85, 'optimizer': 'nadam', 'n_layers': 3, 'kernel_initializer': 'lecun_normal', 'bias_initializer': 'zeros', 'batch_size': 128, 'activationh': 'softmax'}
+Performance:
+	Accuracy: 93.67909786798381% +/-0.0014171281348020603
+	Recall: 0.011428571428571429 +/-0.01665986255670086
+	Precision: 0.11904761904761904 +/-0.1676839701110382
+	F1Score: 0.020847573479152427 +/-0.030302687681043588Results: tp:0.8, tn:1090.0, fp:4.8, fn:68.8Time Elapsed: 3.12 average per run for total of 3.12
+
+Params fold -10: {'use_bias': True, 'units3': 45, 'units2': 10, 'units1': 85, 'optimizer': 'nadam', 'n_layers': 3, 'kernel_initializer': 'lecun_normal', 'bias_initializer': 'zeros', 'batch_size': 128, 'activationh': 'softmax'}
+Performance:
+	Accuracy: 93.93682995356191% +/-0.0012662288342794865
+	Recall: 0.005755693581780538 +/-0.007049560230237819
+	Precision: 0.25 +/-0.3872983346207417
+	F1Score: 0.01111325487169593 +/-0.013613089699231303Results: tp:0.4, tn:1093.4, fp:1.4, fn:69.2Time Elapsed: 3.73 average per run for total of 3.73
+
+Params fold -10: {'use_bias': True, 'units3': 45, 'units2': 10, 'units1': 85, 'optimizer': 'nadam', 'n_layers': 3, 'kernel_initializer': 'lecun_normal', 'bias_initializer': 'zeros', 'batch_size': 128, 'activationh': 'softmax'}
+Performance:
+	Accuracy: 93.86818992288481% +/-0.001731999288641399
+	Recall: 0.011428571428571429 +/-0.01665986255670086
+	Precision: 0.1 +/-0.13333333333333333
+	F1Score: 0.02045303131245836 +/-0.029560766862317116Results: tp:0.8, tn:1092.2, fp:2.6, fn:68.8Time Elapsed: 4.70 average per run for total of 4.70
+
+Params fold -10: {'use_bias': True, 'units3': 45, 'units2': 10, 'units1': 85, 'optimizer': 'nadam', 'n_layers': 3, 'kernel_initializer': 'lecun_normal', 'bias_initializer': 'zeros', 'batch_size': 128, 'activationh': 'softmax'}
+Performance:
+	Accuracy: 93.85096352110776% +/-0.0013708789058520584
+	Recall: 0.002857142857142857 +/-0.005714285714285714
+	Precision: 0.03333333333333333 +/-0.06666666666666667
+	F1Score: 0.005263157894736842 +/-0.010526315789473682Results: tp:0.2, tn:1092.6, fp:2.2, fn:69.4Time Elapsed: 5.41 average per run for total of 5.41
+
+Params fold -10: {'use_bias': True, 'units3': 45, 'units2': 10, 'units1': 85, 'optimizer': 'nadam', 'n_layers': 3, 'kernel_initializer': 'lecun_normal', 'bias_initializer': 'zeros', 'batch_size': 128, 'activationh': 'softmax'}
+Performance:
+	Accuracy: 93.98833209948465% +/-0.0007577042488579343
+	Recall: 0.011552795031055902 +/-0.010834627870096094
+	Precision: 0.35 +/-0.3741657386773941
+	F1Score: 0.02207215898128497 +/-0.020545762076966376Results: tp:0.8, tn:1093.6, fp:1.2, fn:68.8Time Elapsed: 6.45 average per run for total of 6.45
+
+Params fold -10: {'use_bias': True, 'units3': 45, 'units2': 10, 'units1': 85, 'optimizer': 'nadam', 'n_layers': 3, 'kernel_initializer': 'lecun_normal', 'bias_initializer': 'zeros', 'batch_size': 128, 'activationh': 'softmax'}
+Performance:
+	Accuracy: 93.9711942147303% +/-0.001237017546948178
+	Recall: 0.008612836438923395 +/-0.011449556153637156
+	Precision: 0.15714285714285714 +/-0.20404081224408144
+	F1Score: 0.0160234132065118 +/-0.021015920640112706Results: tp:0.6, tn:1093.6, fp:1.2, fn:69.0Time Elapsed: 7.50 average per run for total of 7.50
+
+Params fold -10: {'use_bias': True, 'units3': 45, 'units2': 10, 'units1': 85, 'optimizer': 'nadam', 'n_layers': 3, 'kernel_initializer': 'lecun_normal', 'bias_initializer': 'zeros', 'batch_size': 128, 'activationh': 'softmax'}
+Performance:
+	Accuracy: 93.90243614444756% +/-0.0005444961767342161
+	Recall: 0.008571428571428572 +/-0.011428571428571429
+	Precision: 0.13333333333333333 +/-0.1632993161855452
+	F1Score: 0.016005767844268205 +/-0.021164923584033192Results: tp:0.6, tn:1092.8, fp:2.0, fn:69.0Time Elapsed: 8.14 average per run for total of 8.14
+
+Params fold -10: {'use_bias': True, 'units3': 45, 'units2': 10, 'units1': 85, 'optimizer': 'nadam', 'n_layers': 3, 'kernel_initializer': 'lecun_normal', 'bias_initializer': 'zeros', 'batch_size': 128, 'activationh': 'softmax'}
+Performance:
+	Accuracy: 94.00554372728874% +/-0.0009719724029859213
+	Recall: 0.008612836438923395 +/-0.007032757855497797
+	Precision: 0.36666666666666664 +/-0.3711842908553348
+	F1Score: 0.01674929332463579 +/-0.013680988305164229Results: tp:0.6, tn:1094.0, fp:0.8, fn:69.0Time Elapsed: 8.76 average per run for total of 8.76
+
+Params fold -10: {'use_bias': True, 'units3': 45, 'units2': 10, 'units1': 85, 'optimizer': 'nadam', 'n_layers': 3, 'kernel_initializer': 'lecun_normal', 'bias_initializer': 'zeros', 'batch_size': 128, 'activationh': 'softmax'}
+Performance:
+	Accuracy: 93.86805708394314% +/-0.0011798011405363923
+	Recall: 0.005755693581780538 +/-0.007049560230237819
+	Precision: 0.10666666666666666 +/-0.13727506854649335
+	F1Score: 0.010888888888888889 +/-0.013340738684269896Results: tp:0.4, tn:1092.6, fp:2.2, fn:69.2Time Elapsed: 9.58 average per run for total of 9.58
+
+Params fold -10: {'use_bias': True, 'units3': 45, 'units2': 10, 'units1': 85, 'optimizer': 'nadam', 'n_layers': 3, 'kernel_initializer': 'lecun_normal', 'bias_initializer': 'zeros', 'batch_size': 128, 'activationh': 'softmax'}
+Performance:
+	Accuracy: 93.93677090839606% +/-0.00044740704792000936
+	Recall: 0.005714285714285714 +/-0.011428571428571429
+	Precision: 0.08 +/-0.16
+	F1Score: 0.010666666666666666 +/-0.021333333333333333Results: tp:0.4, tn:1093.4, fp:1.4, fn:69.2Time Elapsed: 10.83 average per run for total of 10.83
+
+Params fold -10: {'use_bias': True, 'units3': 45, 'units2': 10, 'units1': 85, 'optimizer': 'nadam', 'n_layers': 3, 'kernel_initializer': 'lecun_normal', 'bias_initializer': 'zeros', 'batch_size': 128, 'activationh': 'softmax'}
+Performance:
+	Accuracy: 93.91964779761469% +/-0.0009804036934819302
+	Recall: 0.005755693581780538 +/-0.007049560230237819
+	Precision: 0.13333333333333333 +/-0.1632993161855452
+	F1Score: 0.011035007610350075 +/-0.013515604640481177Results: tp:0.4, tn:1093.2, fp:1.6, fn:69.2Time Elapsed: 11.32 average per run for total of 11.32
+
+Params fold -10: {'use_bias': True, 'units3': 45, 'units2': 10, 'units1': 85, 'optimizer': 'nadam', 'n_layers': 3, 'kernel_initializer': 'lecun_normal', 'bias_initializer': 'zeros', 'batch_size': 128, 'activationh': 'softmax'}
+Performance:
+	Accuracy: 93.97116469214737% +/-0.0009877684174568833
+	Recall: 0.011511387163561076 +/-0.014099120460475638
+	Precision: 0.2333333333333333 +/-0.29059326290271154
+	F1Score: 0.021917808219178082 +/-0.026843723208582772Results: tp:0.8, tn:1093.4, fp:1.4, fn:68.8Time Elapsed: 12.82 average per run for total of 12.82
+
+Params fold -10: {'use_bias': True, 'units3': 45, 'units2': 10, 'units1': 85, 'optimizer': 'nadam', 'n_layers': 3, 'kernel_initializer': 'lecun_normal', 'bias_initializer': 'zeros', 'batch_size': 128, 'activationh': 'softmax'}
+Performance:
+	Accuracy: 93.88528351108324% +/-0.0006212023015916172
+	Recall: 0.011428571428571429 +/-0.010690449676496974
+	Precision: 0.18333333333333332 +/-0.15275252316519466
+	F1Score: 0.02141117324967361 +/-0.01979374377572281Results: tp:0.8, tn:1092.4, fp:2.4, fn:68.8Time Elapsed: 12.85 average per run for total of 12.85
+
+Params fold -10: {'use_bias': True, 'units3': 45, 'units2': 10, 'units1': 85, 'optimizer': 'nadam', 'n_layers': 3, 'kernel_initializer': 'lecun_normal', 'bias_initializer': 'zeros', 'batch_size': 128, 'activationh': 'softmax'}
+Performance:
+	Accuracy: 93.81661398318626% +/-0.0015126371401453398
+	Recall: 0.005755693581780538 +/-0.007049560230237819
+	Precision: 0.11666666666666665 +/-0.14529663145135577
+	F1Score: 0.010958904109589041 +/-0.013421861604291386Results: tp:0.4, tn:1092.0, fp:2.8, fn:69.2Time Elapsed: 13.55 average per run for total of 13.55
+
+Params fold -10: {'use_bias': True, 'units3': 45, 'units2': 10, 'units1': 85, 'optimizer': 'nadam', 'n_layers': 3, 'kernel_initializer': 'lecun_normal', 'bias_initializer': 'zeros', 'batch_size': 128, 'activationh': 'softmax'}
+Performance:
+	Accuracy: 93.85088972733193% +/-0.0007037371117209355
+	Recall: 0.008571428571428572 +/-0.011428571428571429
+	Precision: 0.11666666666666665 +/-0.14529663145135577
+	F1Score: 0.015931721194879088 +/-0.021125551312360706Results: tp:0.6, tn:1092.2, fp:2.6, fn:69.0Time Elapsed: 15.35 average per run for total of 15.35
+
+Params fold -10: {'use_bias': True, 'units3': 45, 'units2': 10, 'units1': 85, 'optimizer': 'nadam', 'n_layers': 3, 'kernel_initializer': 'lecun_normal', 'bias_initializer': 'zeros', 'batch_size': 128, 'activationh': 'softmax'}
+Performance:
+	Accuracy: 93.91960350105876% +/-0.0012671284270627703
+	Recall: 0.014368530020703934 +/-0.01564954462125388
+	Precision: 0.24 +/-0.22449944320643647
+	F1Score: 0.026828681906517344 +/-0.028836607500941476Results: tp:1.0, tn:1092.6, fp:2.2, fn:68.6Time Elapsed: 15.59 average per run for total of 15.59
+
+Params fold -10: {'use_bias': True, 'units3': 45, 'units2': 10, 'units1': 85, 'optimizer': 'nadam', 'n_layers': 3, 'kernel_initializer': 'lecun_normal', 'bias_initializer': 'zeros', 'batch_size': 128, 'activationh': 'softmax'}
+Performance:
+	Accuracy: 93.91967732019762% +/-0.0016416143167269184
+	Recall: 0.005714285714285714 +/-0.011428571428571429
+	Precision: 0.13333333333333333 +/-0.26666666666666666
+	F1Score: 0.010958904109589041 +/-0.021917808219178082Results: tp:0.4, tn:1093.2, fp:1.6, fn:69.2Time Elapsed: 16.41 average per run for total of 16.41
+
+Params fold -10: {'use_bias': True, 'units3': 45, 'units2': 10, 'units1': 85, 'optimizer': 'nadam', 'n_layers': 3, 'kernel_initializer': 'lecun_normal', 'bias_initializer': 'zeros', 'batch_size': 128, 'activationh': 'softmax'}
+Performance:
+	Accuracy: 93.83384041032636% +/-0.0019547580341931934
+	Recall: 0.011428571428571429 +/-0.013997084244475301
+	Precision: 0.13 +/-0.1661324772583615
+	F1Score: 0.020923076923076923 +/-0.025633639961950047Results: tp:0.8, tn:1091.8, fp:3.0, fn:68.8Time Elapsed: 18.08 average per run for total of 18.08
+
+Params fold -10: {'use_bias': True, 'units3': 45, 'units2': 10, 'units1': 85, 'optimizer': 'nadam', 'n_layers': 3, 'kernel_initializer': 'lecun_normal', 'bias_initializer': 'zeros', 'batch_size': 128, 'activationh': 'softmax'}
+Performance:
+	Accuracy: 93.86816042566493% +/-0.0012493907388456205
+	Recall: 0.0 +/-0.0
+	Precision: 0.0 +/-0.0
+	F1Score: 0.0 +/-0.0Results: tp:0.0, tn:1093.0, fp:1.8, fn:69.6Time Elapsed: 18.16 average per run for total of 18.16
+
+Params fold -10: {'use_bias': True, 'units3': 45, 'units2': 10, 'units1': 85, 'optimizer': 'nadam', 'n_layers': 3, 'kernel_initializer': 'lecun_normal', 'bias_initializer': 'zeros', 'batch_size': 128, 'activationh': 'softmax'}
+Performance:
+	Accuracy: 93.95396781295322% +/-0.0004184979159237987
+	Recall: 0.002857142857142857 +/-0.005714285714285714
+	Precision: 0.1 +/-0.20000000000000004
+	F1Score: 0.005555555555555556 +/-0.011111111111111112Results: tp:0.2, tn:1093.8, fp:1.0, fn:69.4Time Elapsed: 19.59 average per run for total of 19.59
+
+Params fold -10: {'use_bias': True, 'units3': 45, 'units2': 10, 'units1': 85, 'optimizer': 'nadam', 'n_layers': 3, 'kernel_initializer': 'lecun_normal', 'bias_initializer': 'zeros', 'batch_size': 128, 'activationh': 'softmax'}
+Performance:
+	Accuracy: 93.71343263193232% +/-0.001505565181487742
+	Recall: 0.008571428571428572 +/-0.011428571428571429
+	Precision: 0.12000000000000002 +/-0.16
+	F1Score: 0.015999999999999997 +/-0.02133333333333333Results: tp:0.6, tn:1090.6, fp:4.2, fn:69.0Time Elapsed: 3.20 average per run for total of 3.20
+
+Params fold -10: {'use_bias': True, 'units3': 45, 'units2': 10, 'units1': 85, 'optimizer': 'nadam', 'n_layers': 3, 'kernel_initializer': 'lecun_normal', 'bias_initializer': 'zeros', 'batch_size': 128, 'activationh': 'softmax'}
+Performance:
+	Accuracy: 93.95401208414611% +/-0.0012633460307727344
+	Recall: 0.005755693581780538 +/-0.007049560230237819
+	Precision: 0.26666666666666666 +/-0.38873012632302006
+	F1Score: 0.011189358372456965 +/-0.013704667736420297Results: tp:0.4, tn:1093.6, fp:1.2, fn:69.2Time Elapsed: 3.77 average per run for total of 3.77
+
+Params fold -10: {'use_bias': True, 'units3': 45, 'units2': 10, 'units1': 85, 'optimizer': 'nadam', 'n_layers': 3, 'kernel_initializer': 'lecun_normal', 'bias_initializer': 'zeros', 'batch_size': 128, 'activationh': 'softmax'}
+Performance:
+	Accuracy: 93.88534255624911% +/-0.0014437387970016177
+	Recall: 0.011428571428571429 +/-0.01665986255670086
+	Precision: 0.11904761904761904 +/-0.1676839701110382
+	F1Score: 0.020847573479152427 +/-0.030302687681043588Results: tp:0.8, tn:1092.4, fp:2.4, fn:68.8Time Elapsed: 4.75 average per run for total of 4.75
+
+Params fold -10: {'use_bias': True, 'units3': 45, 'units2': 10, 'units1': 85, 'optimizer': 'nadam', 'n_layers': 3, 'kernel_initializer': 'lecun_normal', 'bias_initializer': 'zeros', 'batch_size': 128, 'activationh': 'softmax'}
+Performance:
+	Accuracy: 93.97113519492748% +/-0.0006493124320509065
+	Recall: 0.008571428571428572 +/-0.011428571428571429
+	Precision: 0.2 +/-0.26666666666666666
+	F1Score: 0.01643835616438356 +/-0.02191780821917808Results: tp:0.6, tn:1093.6, fp:1.2, fn:69.0Time Elapsed: 5.41 average per run for total of 5.41
+
+Params fold -10: {'use_bias': True, 'units3': 45, 'units2': 10, 'units1': 85, 'optimizer': 'nadam', 'n_layers': 3, 'kernel_initializer': 'lecun_normal', 'bias_initializer': 'zeros', 'batch_size': 128, 'activationh': 'softmax'}
+Performance:
+	Accuracy: 94.00549948145891% +/-0.0009986550429147022
+	Recall: 0.017308488612836438 +/-0.016845217221117738
+	Precision: 0.375 +/-0.37080992435478316
+	F1Score: 0.032329329512428104 +/-0.030743570390109817Results: tp:1.2, tn:1093.4, fp:1.4, fn:68.4Time Elapsed: 6.19 average per run for total of 6.19
+
+Params fold -10: {'use_bias': True, 'units3': 45, 'units2': 10, 'units1': 85, 'optimizer': 'nadam', 'n_layers': 3, 'kernel_initializer': 'lecun_normal', 'bias_initializer': 'zeros', 'batch_size': 128, 'activationh': 'softmax'}
+Performance:
+	Accuracy: 93.79941715471821% +/-0.0019779170991473184
+	Recall: 0.017267080745341615 +/-0.021148680690713458
+	Precision: 0.13186813186813187 +/-0.1731946224601806
+	F1Score: 0.030218561925878996 +/-0.03704051506644485Results: tp:1.2, tn:1091.0, fp:3.8, fn:68.4Time Elapsed: 7.41 average per run for total of 7.41
+
+Params fold -10: {'use_bias': True, 'units3': 45, 'units2': 10, 'units1': 85, 'optimizer': 'nadam', 'n_layers': 3, 'kernel_initializer': 'lecun_normal', 'bias_initializer': 'zeros', 'batch_size': 128, 'activationh': 'softmax'}
+Performance:
+	Accuracy: 93.9196035264218% +/-0.0003611605944222496
+	Recall: 0.008571428571428572 +/-0.011428571428571429
+	Precision: 0.14666666666666667 +/-0.1808621328833405
+	F1Score: 0.016146118721461187 +/-0.021408262732536914Results: tp:0.6, tn:1093.0, fp:1.8, fn:69.0Time Elapsed: 7.85 average per run for total of 7.85
+
+Params fold -10: {'use_bias': True, 'units3': 45, 'units2': 10, 'units1': 85, 'optimizer': 'nadam', 'n_layers': 3, 'kernel_initializer': 'lecun_normal', 'bias_initializer': 'zeros', 'batch_size': 128, 'activationh': 'softmax'}
+Performance:
+	Accuracy: 93.93681520495196% +/-0.0008587876350816264
+	Recall: 0.008571428571428572 +/-0.011428571428571429
+	Precision: 0.16666666666666666 +/-0.21081851067789198
+	F1Score: 0.01629026286560533 +/-0.021659119599124033Results: tp:0.6, tn:1093.2, fp:1.6, fn:69.0Time Elapsed: 8.65 average per run for total of 8.65
+
+Params fold -10: {'use_bias': True, 'units3': 45, 'units2': 10, 'units1': 85, 'optimizer': 'nadam', 'n_layers': 3, 'kernel_initializer': 'lecun_normal', 'bias_initializer': 'zeros', 'batch_size': 128, 'activationh': 'softmax'}
+Performance:
+	Accuracy: 93.83372237072074% +/-0.0011449770577875579
+	Recall: 0.008571428571428572 +/-0.011428571428571429
+	Precision: 0.16666666666666666 +/-0.21081851067789198
+	F1Score: 0.01608187134502924 +/-0.021206391069554086Results: tp:0.6, tn:1092.0, fp:2.8, fn:69.0Time Elapsed: 9.46 average per run for total of 9.46
+
+Params fold -10: {'use_bias': True, 'units3': 45, 'units2': 10, 'units1': 85, 'optimizer': 'nadam', 'n_layers': 3, 'kernel_initializer': 'lecun_normal', 'bias_initializer': 'zeros', 'batch_size': 128, 'activationh': 'softmax'}
+Performance:
+	Accuracy: 93.91969206880756% +/-0.001543665953241137
+	Recall: 0.008612836438923395 +/-0.007032757855497798
+	Precision: 0.24 +/-0.22449944320643647
+	F1Score: 0.0165226917057903 +/-0.013499723684971592Results: tp:0.6, tn:1093.0, fp:1.8, fn:69.0Time Elapsed: 10.34 average per run for total of 10.34
+
+Params fold -10: {'use_bias': True, 'units3': 45, 'units2': 10, 'units1': 85, 'optimizer': 'nadam', 'n_layers': 3, 'kernel_initializer': 'lecun_normal', 'bias_initializer': 'zeros', 'batch_size': 128, 'activationh': 'softmax'}
+Performance:
+	Accuracy: 93.93677088303303% +/-0.0011750028193452527
+	Recall: 0.011428571428571429 +/-0.01665986255670086
+	Precision: 0.16999999999999998 +/-0.23579652245103191
+	F1Score: 0.021405405405405406 +/-0.031111101835424777Results: tp:0.8, tn:1093.0, fp:1.8, fn:68.8Time Elapsed: 10.99 average per run for total of 10.99
+
+Params fold -10: {'use_bias': True, 'units3': 45, 'units2': 10, 'units1': 85, 'optimizer': 'nadam', 'n_layers': 3, 'kernel_initializer': 'lecun_normal', 'bias_initializer': 'zeros', 'batch_size': 128, 'activationh': 'softmax'}
+Performance:
+	Accuracy: 93.91955925522893% +/-0.0008802262805985731
+	Recall: 0.014285714285714285 +/-0.012777531299998797
+	Precision: 0.3 +/-0.24494897427831783
+	F1Score: 0.027177177177177176 +/-0.02417557304814262Results: tp:1.0, tn:1092.6, fp:2.2, fn:68.6Time Elapsed: 11.69 average per run for total of 11.69
+
+Params fold -10: {'use_bias': True, 'units3': 45, 'units2': 10, 'units1': 85, 'optimizer': 'nadam', 'n_layers': 3, 'kernel_initializer': 'lecun_normal', 'bias_initializer': 'zeros', 'batch_size': 128, 'activationh': 'softmax'}
+Performance:
+	Accuracy: 93.93678565700598% +/-0.0004270152828599483
+	Recall: 0.011428571428571429 +/-0.016659862556700857
+	Precision: 0.16666666666666666 +/-0.21081851067789198
+	F1Score: 0.02126892573900505 +/-0.030729337255048828Results: tp:0.8, tn:1093.0, fp:1.8, fn:68.8Time Elapsed: 12.78 average per run for total of 12.78
+
+Params fold -10: {'use_bias': True, 'units3': 45, 'units2': 10, 'units1': 85, 'optimizer': 'nadam', 'n_layers': 3, 'kernel_initializer': 'lecun_normal', 'bias_initializer': 'zeros', 'batch_size': 128, 'activationh': 'softmax'}
+Performance:
+	Accuracy: 93.81664350576919% +/-0.0019304538634617458
+	Recall: 0.005755693581780538 +/-0.007049560230237819
+	Precision: 0.13333333333333333 +/-0.1632993161855452
+	F1Score: 0.011035007610350075 +/-0.013515604640481177Results: tp:0.4, tn:1092.0, fp:2.8, fn:69.2Time Elapsed: 13.55 average per run for total of 13.55
+
+Params fold -10: {'use_bias': True, 'units3': 45, 'units2': 10, 'units1': 85, 'optimizer': 'nadam', 'n_layers': 3, 'kernel_initializer': 'lecun_normal', 'bias_initializer': 'zeros', 'batch_size': 128, 'activationh': 'softmax'}
+Performance:
+	Accuracy: 93.83369282277476% +/-0.0010256411359648328
+	Recall: 0.011469979296066253 +/-0.01070183111048576
+	Precision: 0.15333333333333335 +/-0.14847371634213394
+	F1Score: 0.021333333333333333 +/-0.01995550606279435Results: tp:0.8, tn:1091.8, fp:3.0, fn:68.8Time Elapsed: 15.04 average per run for total of 15.04
+
+Params fold -10: {'use_bias': True, 'units3': 45, 'units2': 10, 'units1': 85, 'optimizer': 'nadam', 'n_layers': 3, 'kernel_initializer': 'lecun_normal', 'bias_initializer': 'zeros', 'batch_size': 128, 'activationh': 'softmax'}
+Performance:
+	Accuracy: 93.95401205878308% +/-0.0016659789944638687
+	Recall: 0.017267080745341615 +/-0.016710319233689215
+	Precision: 0.29999999999999993 +/-0.26666666666666666
+	F1Score: 0.0324561403508772 +/-0.031060284736583628Results: tp:1.2, tn:1092.8, fp:2.0, fn:68.4Time Elapsed: 15.27 average per run for total of 15.27
+
+Params fold -10: {'use_bias': True, 'units3': 45, 'units2': 10, 'units1': 85, 'optimizer': 'nadam', 'n_layers': 3, 'kernel_initializer': 'lecun_normal', 'bias_initializer': 'zeros', 'batch_size': 128, 'activationh': 'softmax'}
+Performance:
+	Accuracy: 93.91967732019762% +/-0.0016416143167269184
+	Recall: 0.005714285714285714 +/-0.011428571428571429
+	Precision: 0.13333333333333333 +/-0.26666666666666666
+	F1Score: 0.010958904109589041 +/-0.021917808219178082Results: tp:0.4, tn:1093.2, fp:1.6, fn:69.2Time Elapsed: 15.79 average per run for total of 15.79
+
