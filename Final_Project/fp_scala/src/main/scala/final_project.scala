@@ -2,7 +2,7 @@
 //::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 /** @author  Christian McDaniel and Jeremy Shi
  *  @version 1.4
- *  @date    7 April 2018
+ *  @date    25 April 2018
  *  @see     LICENSE (MIT style license file).
  */
 
@@ -81,46 +81,14 @@ object ClassifierTests extends App
 {
     private val BASE_DIR = "../data/analytics/classifier/" // cancer and caravan data saved within data/analytics/classifier folder of scalation library 										
 
-    // load the ExampleTennis dataset
-    // import scalation.analytics.classifier.ExampleTennis._
-    // val xyTennis    = xy 																				// data already build as a MatriI matrix 
-    // val xTennis     = xyTennis                  (0 until xyTennis.dim1, 0 until xyTennis.dim2 - 1)		// separate data 
-    // val yTennis     = xyTennis.col              (xyTennis.dim2 - 1)										// from labels
-    // val fnTennis    = fn 																				// feature names
-    // val cnTennis    = cn 																				// class names
-
-    // // load and prepare the Caravan dataset
-    // val caravanFP   = BASE_DIR                  + "caravan.csv" 
-    // val dataCaravan = Relation                  (caravanFP, "Caravan", -1, null, ",") 					// read in the CSV
-    // val xyCaravan   = dataCaravan.toMatriI2     (null) 													// convert to MatriI datatype 
-    // val xCaravan    = xyCaravan                 (0 until xyCaravan.dim1, 0 until xyCaravan.dim2 - 1)	// separate data
-    // val yCaravan    = xyCaravan.col             (xyCaravan.dim2 - 1)									// from labels
-    // val fnCaravan   = dataCaravan.colName.slice (0, xyCaravan.dim2-1).toArray 							// feature names
-    // val cnCaravan   = Array                     ("No", "Yes")											// class names
-
-    // // load and prepare the breast-cancer.arff data
-    // val brstCncrDta = BASE_DIR                  + "breast-cancer.arff" 	
-    // var dataCancer  = Relation                  (brstCncrDta, -1, null) 								// read in arff file
-    // val xyCancer    = dataCancer.toMatriI2      (null) 													// convert to MatriI datatype
-    // val xCancer     = xyCancer                  (0 until xyCancer.dim1, 0 until xyCancer.dim2 - 1)		// separate data
-    // val yCancer     = xyCancer.col              (xyCancer.dim2 - 1)										// from labels
-    // val fnCancer    = dataCancer.colName.slice  (0, xyCancer.dim2 - 1).toArray 							// feature names
-    // val cnCancer    = Array                     ("p", "e")                        						// class names
-
     val whiteWineFP   = "../winequality-white.csv"                                           // raw data 
-    //val dataWhiteWine = Relation(whiteWineFP, "WhiteWine", -1, null, ";")   
-
-    val whiteWineDiscFP = "../winequality-0-discretized.csv"                                    // discretized data
-    val dataWhiteWine = Relation(whiteWineDiscFP, "WhiteWine", -1, null, ",")                   // read in the CSV
+    val dataWhiteWine = Relation(whiteWineFP, "WhiteWine", -1, null, ";")   
 
     val xyWhiteWine   = dataWhiteWine.toMatriI2(null)   
     val xWhiteWine    = xyWhiteWine(0 until xyWhiteWine.dim1, 0 until xyWhiteWine.dim2 - 1)    // separate data
     val yWhiteWine    = xyWhiteWine.col(xyWhiteWine.dim2 - 1)//.-=(3) 
     val kwt = 7
 
-    // val data   = MatrixD (file)
-    // val target = data.col (data.dim2-1).-=(3)                        // regularize the target value
-    // val sample = data.selectCols (Range(0, data.dim2 - 1).toArray)
     var fnWhiteWine     = new Array[String] (xyWhiteWine.dim2-1)
     val cnWhiteWine     = new Array[String] (kwt)
 
@@ -129,20 +97,29 @@ object ClassifierTests extends App
     val redWineFP   = "../winequality-red.csv"                                           // raw data 
     val dataRedWine = Relation(redWineFP, "RedWine", -1, null, ";")   
 
-
-    val redWineDiscFP = "../winequality-1-discretized.csv"                                    // discretized data
-    //val dataRedWine = Relation(redWineDiscFP, "RedWine", -1, null, ",")                   // read in the CSV
-
     val xyRedWine   = dataRedWine.toMatriI2(null)   
     val xRedWine    = xyRedWine(0 until xyRedWine.dim1, 0 until xyRedWine.dim2 - 1)    // separate data
     val yRedWine    = xyRedWine.col(xyRedWine.dim2 - 1).-=(3) 
     val kred = 6
 
-    // val data   = MatrixD (file)
-    // val target = data.col (data.dim2-1).-=(3)                        // regularize the target value
-    // val sample = data.selectCols (Range(0, data.dim2 - 1).toArray)
     var fnRedWine     = new Array[String] (xyWhiteWine.dim2-1)
     val cnRedWine     = new Array[String] (kred)
+
+////////////////
+
+    val comboTypeFP = "../winetypecomparison.csv"                                    // discretized data
+    val dataType = Relation(comboTypeFP, "WineType", -1, null, ",")                   // read in the CSV
+
+    val xyWineType   = dataType.toMatriI2(null)   
+    val xWineType    = xyWineType(0 until xyWineType.dim1, 0 until xyWineType.dim2 - 1)    // separate data
+    val yWineType    = xyWineType.col(xyWineType.dim2 - 1) 
+    val ktype = 2
+
+    var fnWineType     = new Array[String] (xyWhiteWine.dim2-1)
+    val cnWineType     = new Array[String] (ktype)
+
+
+
 
     // val k = 2
 
@@ -442,19 +419,10 @@ object ClassifierTests extends App
 
         } // crossValidateRand
 
-  // call the methods to run the classifiers with the given data for given folds: 
-  //10-fold CV
-  // crossValidateAlgos (" TENNIS ", xyTennis,  xTennis,  yTennis,  fnTennis,  cnTennis,  10)
-  // crossValidateAlgos ("CARAVAN ", xyCaravan, xCaravan, yCaravan, fnCaravan, cnCaravan, 10, true)
-  // crossValidateAlgos (" CANCER ", xyCancer,  xCancer,  yCancer,  fnCancer,  cnCancer,  10)
- 
-  // //20-fold CV
-  // crossValidateAlgos (" TENNIS ", xyTennis,  xTennis,  yTennis,  fnTennis,  cnTennis,  14)              // LOOCV
-  // crossValidateAlgos ("CARAVAN ", xyCaravan, xCaravan, yCaravan, fnCaravan, cnCaravan, 20, true)
-  // crossValidateAlgos (" CANCER ", xyCancer,  xCancer,  yCancer,  fnCancer,  cnCancer,  20)
 
   //crossValidateAlgos ("Wt. WINE", xyWhiteWine,  xWhiteWine,  yWhiteWine,  fnWhiteWine,  cnWhiteWine, kwt, 10)
-  crossValidateAlgos ("Red WINE", xyRedWine,  xRedWine,  yRedWine,  fnRedWine,  cnRedWine, kred, 10)
+  //crossValidateAlgos ("Red WINE", xyRedWine,  xRedWine,  yRedWine,  fnRedWine,  cnRedWine, kred, 10)
+  crossValidateAlgos ("WINETYPE", xyWineType,  xWineType,  yWineType,  fnWineType,  cnWineType, ktype, 10)
 
 
 
