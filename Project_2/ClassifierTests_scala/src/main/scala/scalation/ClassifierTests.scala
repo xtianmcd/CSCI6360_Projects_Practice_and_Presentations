@@ -79,7 +79,7 @@ import scala.math.sqrt
 
 object ClassifierTests extends App
 {
-    private val BASE_DIR = "../data/analytics/classifier/" // cancer and caravan data saved within data/analytics/classifier folder of scalation library 										
+    //private val BASE_DIR = "../../../../../data/" // cancer and caravan data saved within data/analytics/classifier folder of scalation library 										
 
     // load the ExampleTennis dataset
     import scalation.analytics.classifier.ExampleTennis._
@@ -90,22 +90,22 @@ object ClassifierTests extends App
     val cnTennis    = cn 																				// class names
 
     // load and prepare the Caravan dataset
-    val caravanFP   = BASE_DIR                  + "caravan.csv" 
-    val dataCaravan = Relation                  (caravanFP, "Caravan", -1, null, ",") 					// read in the CSV
-    val xyCaravan   = dataCaravan.toMatriI2     (null) 													// convert to MatriI datatype 
-    val xCaravan    = xyCaravan                 (0 until xyCaravan.dim1, 0 until xyCaravan.dim2 - 1)	// separate data
-    val yCaravan    = xyCaravan.col             (xyCaravan.dim2 - 1)									// from labels
-    val fnCaravan   = dataCaravan.colName.slice (0, xyCaravan.dim2-1).toArray 							// feature names
-    val cnCaravan   = Array                     ("No", "Yes")											// class names
+    //val caravanFP   = BASE_DIR                  + "caravan.csv" 
+    //val dataCaravan = Relation                  (caravanFP, "Caravan", -1, null, ",") 					// read in the CSV
+    //val xyCaravan   = dataCaravan.toMatriI2     (null) 													// convert to MatriI datatype 
+    //val xCaravan    = xyCaravan                 (0 until xyCaravan.dim1, 0 until xyCaravan.dim2 - 1)	// separate data
+    //val yCaravan    = xyCaravan.col             (xyCaravan.dim2 - 1)									// from labels
+    //val fnCaravan   = dataCaravan.colName.slice (0, xyCaravan.dim2-1).toArray 							// feature names
+    //val cnCaravan   = Array                     ("No", "Yes")											// class names
 
     // load and prepare the breast-cancer.arff data
-    val brstCncrDta = BASE_DIR                  + "breast-cancer.arff" 	
-    var dataCancer  = Relation                  (brstCncrDta, -1, null) 								// read in arff file
-    val xyCancer    = dataCancer.toMatriI2      (null) 													// convert to MatriI datatype
-    val xCancer     = xyCancer                  (0 until xyCancer.dim1, 0 until xyCancer.dim2 - 1)		// separate data
-    val yCancer     = xyCancer.col              (xyCancer.dim2 - 1)										// from labels
-    val fnCancer    = dataCancer.colName.slice  (0, xyCancer.dim2 - 1).toArray 							// feature names
-    val cnCancer    = Array                     ("p", "e")                        						// class names
+    //val brstCncrDta = BASE_DIR                  + "breast-cancer.arff" 	
+    //var dataCancer  = Relation                  (brstCncrDta, -1, null) 								// read in arff file
+    //val xyCancer    = dataCancer.toMatriI2      (null) 													// convert to MatriI datatype
+    //val xCancer     = xyCancer                  (0 until xyCancer.dim1, 0 until xyCancer.dim2 - 1)		// separate data
+    //val yCancer     = xyCancer.col              (xyCancer.dim2 - 1)										// from labels
+    //val fnCancer    = dataCancer.colName.slice  (0, xyCancer.dim2 - 1).toArray 							// feature names
+    //val cnCancer    = Array                     ("p", "e")                        						// class names
 
     val k = 2
 
@@ -408,12 +408,12 @@ object ClassifierTests extends App
   // call the methods to run the classifiers with the given data for given folds: 
   //10-fold CV
   crossValidateAlgos (" TENNIS ", xyTennis,  xTennis,  yTennis,  fnTennis,  cnTennis,  10)
-  crossValidateAlgos ("CARAVAN ", xyCaravan, xCaravan, yCaravan, fnCaravan, cnCaravan, 10, true)
-  crossValidateAlgos (" CANCER ", xyCancer,  xCancer,  yCancer,  fnCancer,  cnCancer,  10)
+  //crossValidateAlgos ("CARAVAN ", xyCaravan, xCaravan, yCaravan, fnCaravan, cnCaravan, 10, true)
+  //crossValidateAlgos (" CANCER ", xyCancer,  xCancer,  yCancer,  fnCancer,  cnCancer,  10)
  
   //20-fold CV
-  crossValidateAlgos (" TENNIS ", xyTennis,  xTennis,  yTennis,  fnTennis,  cnTennis,  14)              // LOOCV
-  crossValidateAlgos ("CARAVAN ", xyCaravan, xCaravan, yCaravan, fnCaravan, cnCaravan, 20, true)
-  crossValidateAlgos (" CANCER ", xyCancer,  xCancer,  yCancer,  fnCancer,  cnCancer,  20)
+  //crossValidateAlgos (" TENNIS ", xyTennis,  xTennis,  yTennis,  fnTennis,  cnTennis,  14)              // LOOCV
+  //crossValidateAlgos ("CARAVAN ", xyCaravan, xCaravan, yCaravan, fnCaravan, cnCaravan, 20, true)
+  //crossValidateAlgos (" CANCER ", xyCancer,  xCancer,  yCancer,  fnCancer,  cnCancer,  20)
 
 } // ClassifierTests
